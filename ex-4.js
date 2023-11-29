@@ -1,15 +1,10 @@
 // Start coding here
-let calculator = {
-  add: add,
-  subtract: subtract,
-  multiply: multiply,
-  divide: divide,
+const calculator = {
+  add: (a, b) => a + b,
+  subtract: (a, b) => a - b,
+  multiply: (a, b) => a * b,
+  divide: (a, b) => a / b,
 };
 
-function addResult(a, b) {
-  let result = a + b;
-  return result;
-}
-
-let addResult2 = addResult(10, 20);
+let addResult2 = calculator.add(10, 20);
 console.log(addResult2);
